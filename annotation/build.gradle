@@ -1,0 +1,15 @@
+apply plugin: 'java'
+apply plugin: 'maven'
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+}
+
+uploadArchives{
+    repositories.mavenDeployer{
+        repository(url: "file:///Users/free/Documents/Android/repo")
+        pom.groupId = "com.github.imishx.activityrouter"
+        pom.artifactId = "annotation"
+        pom.version = "1.0"
+    }
+}
