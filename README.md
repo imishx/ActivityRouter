@@ -148,3 +148,5 @@ public class CheckUserInfoInterceptor implements Interceptor {
 }
 
 ```
+
+简书：<http://www.jianshu.com/u/a4232a78d40d>
