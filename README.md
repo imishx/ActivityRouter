@@ -86,7 +86,7 @@ public class LoginInterceptor implements Interceptor {
 
 ```
 ####进阶
-doIntercept方法是在主线程中调用的，所以如果存在耗时的操作或者需要访问网络还需要放到子线程中，在我们项目当中就存在这样一种业务需求，在购买任何产品之前都需要先请求网络判断一下当前用户是否开户绑卡，使用Intercepter就可以很好的将这块业务逻辑独立出来，而不需要在每个产品的购买界面都去写相同的代码,do not repeat yourselft!      
+doIntercept方法是在主线程中调用的，所以如果存在耗时的操作或者需要访问网络还需要放到子线程中，在我们项目当中就存在这样一种业务需求，在购买任何产品之前都需要先请求网络判断一下当前用户是否开户绑卡，使用Intercepter就可以很好的将这块业务逻辑独立出来，而不需要在每个产品的购买界面都去写相同的代码,do not repeat yourself!      
 
 ```java
 @ActivityMapping(value = {"product/buy"})
