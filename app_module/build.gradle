@@ -28,6 +28,6 @@ apt {
 
 dependencies {
     compile 'com.android.support:appcompat-v7:24.2.1'
-    compile 'com.github.imishx.activityrouter:router:1.0'
-    apt 'com.github.imishx.activityrouter:compiler:1.0'
+    compile project(':activityrouter')
+    apt project(':compiler')
 }

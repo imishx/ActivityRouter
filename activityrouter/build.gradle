@@ -1,6 +1,5 @@
 apply plugin: 'com.android.library'
 apply plugin: 'com.neenbedankt.android-apt'
-apply plugin: 'maven'
 
 android {
     compileSdkVersion 23
@@ -21,15 +20,6 @@ android {
 }
 
 dependencies {
-    compile 'com.github.imishx.activityrouter:annotation:1.0'
+    compile project(':annotation')
 }
 
-
-uploadArchives{
-    repositories.mavenDeployer{
-        repository(url: "file:///Users/free/Documents/Android/repo")
-        pom.groupId = "com.github.imishx.activityrouter"
-        pom.artifactId = "router"
-        pom.version = "1.0"
-    }
-}

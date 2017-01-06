@@ -3,12 +3,6 @@
 buildscript {
     repositories {
         jcenter()
-        maven {
-            url 'file:///Users/free/Documents/Android/repo'
-        }
-        maven {
-            url 'http://mvn.fengjr.inc:8081/nexus/content/groups/public/'
-        }
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:2.2.0'
@@ -24,12 +18,6 @@ buildscript {
 allprojects {
     repositories {
         jcenter()
-        maven {
-            url 'file:///Users/free/Documents/Android/repo'
-        }
-        maven {
-            url 'http://mvn.fengjr.inc:8081/nexus/content/groups/public/'
-        }
     }
 
     tasks.withType(JavaCompile) {
